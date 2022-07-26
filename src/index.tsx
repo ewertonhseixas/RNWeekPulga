@@ -1,12 +1,13 @@
-import React from 'react';
-import {View} from 'react-native';
-
-//import {Container} from './styles'
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { Navigation } from "./navigation";
 
 const App: React.FC = () => {
-
-    return <View style={{backgroundColor:"red", flex:1}}/>;
-
+  return (
+    <NavigationContainer>
+      <Navigation />
+    </NavigationContainer>
+  );
 };
 
 export default App;
